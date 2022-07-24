@@ -1,0 +1,17 @@
+
+
+.navbar-brand, .navbar-tabs {
+    min-height: 5rem;
+}
+
+.navbar-item img {
+    max-height: 4.3rem;
+}
+
+.is-link.input, .is-link.textarea {
+    border-color: none;
+}
+
+.input, .select select, .textarea {
+    border-radius: 10px;
+}
