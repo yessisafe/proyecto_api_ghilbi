@@ -15,3 +15,10 @@
 .input, .select select, .textarea {
     border-radius: 10px;
 }
+
+h1{
+    font-family: 'Charis SIL', serif;
+    text-align: center;
+}
+
+
