@@ -1,114 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Proyecto Api </title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://kit.fontawesome.com/1a7569622b.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@700&display=swap" rel="stylesheet"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Api</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1a7569622b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="./js/main.js"></script>
-</head>
-<body>
- 
-  <!-- navbar código --> 
-  <nav class="navbar is-info" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" >
-        <img src="./img/ghibli_white.png" >
-      </a>
-  
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-  
-    <!-- opciones menu --> 
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item is-size-5">
-          <i class="fa-solid fa-house mx-2"></i>
-          Home
+  </head>
+  <body>
+    <!-- navbar código -->
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img src="./img/ghibli_white.png" />
         </a>
-  
-        <a class="navbar-item is-size-5">
-          <i class="fa-solid fa-film mx-2"></i>
-          Movies
-        </a>
-  
 
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-   
 
-      <!-- input navbar --> 
-      <div class="navbar-end">
-        <div class="navbar-item">
+      <!-- opciones menu -->
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item is-size-5">
+            <i class="fa-solid fa-house mx-2"></i>
+            Home
+          </a>
 
-          <input class="input is-link is-normal mx-1" type="text" placeholder="Buscar">
+          <a class="navbar-item is-size-5">
+            <i class="fa-solid fa-film mx-2"></i>
+            Movies
+          </a>
+        </div>
 
-          <div class="buttons">
-            
-            <a class="button is-light">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
+        <!-- input navbar -->
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <input
+              class="input is-link is-normal mx-1"
+              type="text"
+              placeholder="Buscar"
+            />
+
+            <div class="buttons">
+              <a class="button is-light">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
+    </nav>
 
-    </div>
-  </nav>
-
-        <!-- Empieza el contenido --> 
+    <!-- Empieza el contenido -->
     <div class="container">
       <h1 class="title is-1 my-5 has-text-link">Studio Ghilbi</h1>
 
-
-      <!-- ID Movies --> 
+      <!-- ID Movies -->
       <div id="movies ">
-
         <div class="columns py-5">
           <div class="column is-3">
-
-            <!-- Empiezan las cards --> 
+            <!-- Empiezan las cards -->
+            <!-- Imagen cards -->
             <div class="card">
               <div class="card-image">
                 <figure class="image is-4by5">
-                  <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/npOnzAbLh6VOIu3naU5QaEcTepo.jpg" alt="Placeholder image">
+                  <img
+                    src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/npOnzAbLh6VOIu3naU5QaEcTepo.jpg"
+                    alt="Placeholder image"
+                  />
                 </figure>
               </div>
+
+              <!-- Contenido cards -->
               <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4">Movie</p>
-                  </div>
-                </div>
-            
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. 
-                  
+                <div class="media-content">
+                  <p class="title is-4">Movie</p>
+                  <h5 class="subtitle is-5">Year</h5>
                 </div>
               </div>
             </div>
-
+            <!-- Terminan las cards -->
           </div>
-
-
         </div>
-
       </div>
-
-
     </div>
-
-</body>
+  </body>
 </html>
