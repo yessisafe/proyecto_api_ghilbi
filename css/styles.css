@@ -21,4 +21,8 @@ h1{
     text-align: center;
 }
 
+.image img{
+    object-fit: cover;
+}
+
 
