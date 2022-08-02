@@ -1,4 +1,11 @@
-
+  body{
+   /* background: linear-gradient(rgba(60, 60, 60, 0.6) 0%, rgba(60, 60, 60, 0.6) 100%), url(../img/varios.jpg);
+    background-position:center;  */
+    
+    background-image: url(../img/varios.jpg);
+    background-color: rgba(60, 60, 60, 0.6);
+    
+}  
 
 .navbar-brand, .navbar-tabs {
     min-height: 5rem;
@@ -16,13 +23,17 @@
     border-radius: 10px;
 }
 
-h1{
+/*    h1{
     font-family: 'Charis SIL', serif;
     text-align: center;
-}
+    }    */
 
 .image img{
     object-fit: cover;
+}
+
+.card .card-content {
+    text-align: center;
 }
 
 
