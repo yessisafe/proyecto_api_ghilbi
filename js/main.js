@@ -6,17 +6,22 @@ fetch('https://ghibliapi.herokuapp.com/films')
   })
 
 
+  document.querySelector("#busqueda").addEventListener("keyup",buscar);
+
+
   //const Dibujar
   const dibujar= (peliculas) => {
     let div =document.createElement("div");
     div.classList.add("column", "is-3");
-    document.querySelector("#movies").innerHTML="";
+    document.querySelector("#movies").innerHTML="";     //hace que el div este vacio para meter los datos de la api
 
     peliculas.forEach((pelicula) => {
       //Cada pelicula
-      let div =document.createElement("div");
-      div.classList.add("column", "is-3");
-
+      let div =document.createElement("div");     //elemento div, donde se crearan las cards
+      div.classList.add("column", "is-3");        //column, columna dentro del div para las cards; 
+                                                  //is-3 espacio para cada card (en total 12, divididas en 4 columnas)
+      
+      //Aqui esta la card de cada pelicula y toma los datos especificados de la api
       div.innerHTML +=`<div class="card">
                       <div class="card-image">
                         <figure class="image is-4by5">
@@ -30,6 +35,7 @@ fetch('https://ghibliapi.herokuapp.com/films')
                           </div>
                       </div>`
 
+       //en este div apareceran los resultados de las cards y los datos de la api
        document.querySelector("#movies").append(div);
 
     });
