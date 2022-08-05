@@ -1,12 +1,27 @@
+let resultados=[];      //funcion para busqueda
+
+
 //funcion fetch
 fetch('https://ghibliapi.herokuapp.com/films')
   .then((response)=>response.json())
   .then((data)=>{
-    dibujar(data);
+    resultados = data;
+    dibujar(resultados);
   })
 
 
-  document.querySelector("#busqueda").addEventListener("keyup",buscar);
+    //const para buscador(input)
+  const buscar = (evt) =>{
+    let nombre = evt.currentTarget.value;
+
+      //funcion para busqueda por nombre de pelicula
+    let filtrados = resultados.filter(function(resultado){
+        return resultado.title.toLowerCase().includes(nombre.toLowerCase());
+    });
+
+    dibujar(filtrados);
+
+  }
 
 
   //const Dibujar
@@ -44,3 +59,6 @@ fetch('https://ghibliapi.herokuapp.com/films')
 
 
   }
+
+
+  document.querySelector("#busqueda").addEventListener("keyup",buscar);
