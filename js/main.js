@@ -16,10 +16,10 @@ fetch('https://ghibliapi.herokuapp.com/films')
 
       //funcion para busqueda por nombre de pelicula
     let filtrados = resultados.filter(function(resultado){
-        return resultado.title.toLowerCase().includes(nombre.toLowerCase());
+        return resultado.title.toLowerCase().includes(nombre.toLowerCase());      //busca en la api el nombre de la pelicula y si coincide con el input lo muestra
     });
 
-    dibujar(filtrados);
+    dibujar(filtrados);         //aparece el titulo de la pelicula y la imagen
 
   }
 
